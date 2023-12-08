@@ -11,43 +11,42 @@ tags:       [window, linux, wsl]
 
 ## Recommended Specifications
 
-- Windows 11, power shell
+- Windows 11, power shell, Ubuntu 22.04.2 LTS
+
+## Reference site
+
+- [How to install Linux on Windows using WSL]{:.heading.flip-title}
 
 ## Deploy to wsl
 
 - Run to powershell as administration
 {:.note}
 
-- Recommended version : Ubuntu 22.04.2 LTS
-{:.note}
-
-- [How to install Linux on Windows using WSL]{:.heading.flip-title}
-- wsl version set 1 -> 2 :
+1. wsl version set 1 -> 2 :
   
-  ```sh
-  wsl --set-default-version 2
-  ```
+```sh
+wsl --set-default-version 2
+```
 
-- List available Linux distributions
+1. List available Linux distributions
+
+```sh
+wsl -l -o
+```
+
+1. Deploying a specific Linux to wsl
+
+```sh
+wsl --install -d <distribution name>
+```
+
+1. Status of wsl
   
-  ```sh
-  wsl -l -o
-  ```
-
-- Deploying a specific Linux to wsl
-
-  ```sh
-  wsl --install -d <distribution name>
-  ```
-
-- Status of wsl
-  
-  ```sh
-  wsl --status
-  ```
+```sh
+wsl --status
+```
 
 {:.related-posts.faded}
-
 
 
 [How to install Linux on Windows using WSL]: https://learn.microsoft.com/ko-kr/windows/wsl/install
