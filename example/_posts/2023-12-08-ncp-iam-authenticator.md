@@ -23,34 +23,34 @@ tags:       [linux, kubernetes, kubectl]
 ## Setup to ncp-iam-authenticator
 
 - Download
-  
-    ```sh
-    curl -o ncp-iam-authenticator -L https://github.com/NaverCloudPlatform/ncp-iam-authenticator/releases/latest/download/ncp-iam-authenticator_linux_amd64
-    ```
+
+  ```sh
+  curl -o ncp-iam-authenticator -L https://github.com/NaverCloudPlatform/ncp-iam-authenticator/releases/latest/download/ncp-iam-authenticator_linux_amd64
+  ```
 
 - Add Permission
 
-    ```sh
-    chmod +x ./ncp-iam-authenticator
-    ```
+  ```sh
+  $ chmod +x ./ncp-iam-authenticator
+  ```
 
 - Add path
 
-    ```sh
-    mkdir -p $HOME/bin && cp ./ncp-iam-authenticator $HOME/bin/ncp-iam-authenticator && export PATH=$PATH:$HOME/bin
-    ```
+  ```sh
+  $ mkdir -p $HOME/bin && cp ./ncp-iam-authenticator $HOME/bin/ncp-iam-authenticator && export PATH=$PATH:$HOME/bin
+  ```
 
 - Add bashrc
 
-    ```sh
-    echo 'export PATH=$PATH:$HOME/bin' >> ~/.bash_profile
-    ```
+  ```sh
+  $ echo 'export PATH=$PATH:$HOME/bin' >> ~/.bash_profile
+  ```
 
 - Check binary
 
-    ```sh
-    ncp-iam-authenticator help
-    ```
+  ```sh
+  $ cp-iam-authenticator help
+  ```
 
 {:.related-posts.faded}
 
@@ -58,18 +58,18 @@ tags:       [linux, kubernetes, kubectl]
 
 - Create configure file
   
-    ```sh
-    # file: `~/.ncloud/configure`
-    [DEFAULT]
-    ncloud_access_key_id = ACCESSKEYACCESSKEYAC
-    ncloud_secret_access_key = SECRETKEYSECRETKEYSECRETKEYSECRETKEYSECR
-    ncloud_api_url = https://ncloud.apigw.gov-ntruss.com
+  ```sh
+  # file: `~/.ncloud/configure`
+  [DEFAULT]
+  ncloud_access_key_id = ACCESSKEYACCESSKEYAC
+  ncloud_secret_access_key = SECRETKEYSECRETKEYSECRETKEYSECRETKEYSECR
+  ncloud_api_url = https://ncloud.apigw.gov-ntruss.com
 
-    [project]
-    ncloud_access_key_id = ACCESSKEYACCESSKEYAC
-    ncloud_secret_access_key = SECRETKEYSECRETKEYSECRETKEYSECRETKEYSECR
-    ncloud_api_url = https://ncloud.apigw.gov-ntruss.com
-    ```
+  [project]
+  ncloud_access_key_id = ACCESSKEYACCESSKEYAC
+  ncloud_secret_access_key = SECRETKEYSECRETKEYSECRETKEYSECRETKEYSECR
+  ncloud_api_url = https://ncloud.apigw.gov-ntruss.com
+  ```
 
 - Where is key path
   
@@ -84,16 +84,16 @@ tags:       [linux, kubernetes, kubectl]
 - ClusterUuid: `console > Service > VPC > Kubernetes Service > Clusters > cluster-name`
 - Region : KR,KRS
 - Download
-  
-    ```sh
-    ncp-iam-authenticator create-kubeconfig --region KR --clusterUuid <cluster-uuid> --output kubeconfig.yaml
-    ```
+
+  ```sh
+  $ ncp-iam-authenticator create-kubeconfig --region KR --clusterUuid <cluster-uuid> --output kubeconfig.yaml
+  ```
 
 {:.related-posts.faded}
 
 ## Install kubectl
 
-- [Install and Set Up kubectl on Linux]{:.heading.flip-title} - gov-ncp-docs &rarr; kubernetes
+- [Install and Set Up kubectl on Linux]{:.heading.flip-title} &rarr; kubernetes
 
 {:.related-posts.faded}
 
@@ -109,7 +109,7 @@ alias kube='kubectl --kubeconfig /path/to/kubeconfig.yaml'
 ## append ncp Container Registry
 
 ```sh
-kube create secret docker-registry regcred \
+$ kube create secret docker-registry regcred \
             --docker-server=<docker-server> \
             --docker-username=<api-access-key> \
             --docker-password=<api-secret-key> \
