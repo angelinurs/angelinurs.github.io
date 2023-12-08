@@ -13,10 +13,15 @@ tags:       [window, linux, wsl]
 
 - Windows 11, power shell
 
-## Depoy to wsl
+## Deploy to wsl
+
 - [How to install Linux on Windows using WSL]{:.heading.flip-title}
 - Run to powershell as administration
-- wsl version set 1 -> 2 : `wsl --set-default-version 2`
+{:.note}
+- wsl version set 1 -> 2
+  ```sh
+  wsl --set-default-version 2
+  ```
 - List available Linux distributions : `wsl -l -o`
 - Deploying a specific Linux to wsl : `wsl --install -d <distribution name>`
 - Recommended version : Ubuntu 22.04.2 LTS
