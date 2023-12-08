@@ -12,6 +12,7 @@ tags:       [window, linux, wsl]
 ## Recommended Specifications
 
 - Windows 11, power shell, Ubuntu 22.04.2 LTS
+{:.related-posts.faded}
 
 ## Reference site
 
@@ -24,28 +25,28 @@ Run to powershell as administration
 {:.note}
 
 - wsl version set 1 -> 2
-  
-    ```sh
-    wsl --set-default-version 2
-    ```
+
+```sh
+$ wsl --set-default-version 2
+```
 
 - List available Linux distributions
 
-    ```sh
-    wsl -l -o
-    ```
+```sh
+$ wsl -l -o
+```
 
 - Deploying a specific Linux to wsl
 
-    ```sh
-    wsl --install -d <distribution name>
-    ```
+```sh
+$ wsl --install -d <distribution name>
+```
 
 - Status of wsl
   
-    ```sh
-    wsl --status
-    ```
+```sh
+$ wsl --status
+```
 
 {:.related-posts.faded}
 
