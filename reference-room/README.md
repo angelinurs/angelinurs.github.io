@@ -18,8 +18,7 @@ While this page tries to be beginner-friendly, as someone who is interested in I
 
 ## Getting started
 * [Hydejack Starter Kit]{:.heading.flip-title} --- 2019 Ubuntu Server CLI pro tips
-* [Hydejack Starter Kit-local]{:.heading.flip-title} --- 2019 Ubuntu Server CLI pro tips
 {:.related-posts.faded}
 
-[Hydejack Starter Kit]: https://angelinurs.github.io/download/Ubuntu.Server.CLI.pro.tips.1.pdf
-[Hydejack Starter Kit-local]: ../download/Ubuntu.Server.CLI.pro.tips.1.pdf
+<!-- [Hydejack Starter Kit]: https://angelinurs.github.io/download/Ubuntu.Server.CLI.pro.tips.1.pdf -->
+[Hydejack Starter Kit]: ../download/Ubuntu.Server.CLI.pro.tips.1.pdf
