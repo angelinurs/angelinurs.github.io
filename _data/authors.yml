@@ -3,7 +3,7 @@
 # Change `author1` to your shortname.
 author1:
   name:              <Naru> <Ramu>
-  email:             <angelinurs.substack.com>
+  email:             <angelinurs@hotmail.com>
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
@@ -25,9 +25,9 @@ author1:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    twitter:         <username>
-    github:          <username>
-    email:           <angelinurs.substack.com>
+    # twitter:         <username>
+    # github:          <username>
+    email:           <angelinurs@hotmail.com>
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>

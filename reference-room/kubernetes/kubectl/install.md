@@ -3,8 +3,8 @@ layout: page
 title: Install and Set Up kubectl on Linux
 description: >
   How you install and set up kubectl on Linux.
-hide_description: true
-sitemap: false
+hide_description: false
+sitemap: true
 categories: [linux, kubernetes, kubectl]
 tags:       [linux, kubernetes, kubectl]
 ---
