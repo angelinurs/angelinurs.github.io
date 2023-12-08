@@ -15,7 +15,8 @@ tags:       [window, linux, wsl]
 
 ## Reference site
 
-- [How to install Linux on Windows using WSL]{:.heading.flip-title}
+- [How to install Linux on Windows using WSL]{:.heading.flip-title} - Microsoft &rarr; WSL
+{:.related-posts.faded}
 
 ## Deploy to wsl
 
