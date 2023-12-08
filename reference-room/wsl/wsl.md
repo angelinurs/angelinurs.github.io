@@ -15,17 +15,39 @@ tags:       [window, linux, wsl]
 
 ## Deploy to wsl
 
-- [How to install Linux on Windows using WSL]{:.heading.flip-title}
 - Run to powershell as administration
 {:.note}
-- wsl version set 1 -> 2
+
+- Recommended version : Ubuntu 22.04.2 LTS
+{:.note}
+
+- [How to install Linux on Windows using WSL]{:.heading.flip-title}
+- wsl version set 1 -> 2 :
+  
   ```sh
   wsl --set-default-version 2
   ```
-- List available Linux distributions : `wsl -l -o`
-- Deploying a specific Linux to wsl : `wsl --install -d <distribution name>`
-- Recommended version : Ubuntu 22.04.2 LTS
-- Status of wsl : `wsl --status`
+
+- List available Linux distributions
+  
+  ```sh
+  wsl -l -o
+  ```
+
+- Deploying a specific Linux to wsl
+
+  ```sh
+  wsl --install -d <distribution name>
+  ```
+
+- Status of wsl
+  
+  ```sh
+  wsl --status
+  ```
+
 {:.related-posts.faded}
+
+
 
 [How to install Linux on Windows using WSL]: https://learn.microsoft.com/ko-kr/windows/wsl/install
