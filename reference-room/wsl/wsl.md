@@ -19,7 +19,7 @@ tags:       [window, linux, wsl]
 
 ## Deploy to wsl
 
-- Run to powershell as administration
+Run to powershell as administration
 {:.note}
 
 1. wsl version set 1 -> 2 :
