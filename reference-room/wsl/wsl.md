@@ -28,19 +28,19 @@ Run to powershell as administration
 wsl --set-default-version 2
 ```
 
-1. List available Linux distributions
+2. List available Linux distributions
 
 ```sh
 wsl -l -o
 ```
 
-1. Deploying a specific Linux to wsl
+3. Deploying a specific Linux to wsl
 
 ```sh
 wsl --install -d <distribution name>
 ```
 
-1. Status of wsl
+4. Status of wsl
   
 ```sh
 wsl --status
