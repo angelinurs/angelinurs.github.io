@@ -22,25 +22,25 @@ tags:       [window, linux, wsl]
 Run to powershell as administration
 {:.note}
 
-1. wsl version set 1 -> 2 :
+- wsl version set 1 -> 2 :
   
 ```sh
 wsl --set-default-version 2
 ```
 
-2. List available Linux distributions
+- List available Linux distributions
 
 ```sh
 wsl -l -o
 ```
 
-3. Deploying a specific Linux to wsl
+- Deploying a specific Linux to wsl
 
 ```sh
 wsl --install -d <distribution name>
 ```
 
-4. Status of wsl
+- Status of wsl
   
 ```sh
 wsl --status
