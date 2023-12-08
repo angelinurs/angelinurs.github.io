@@ -9,6 +9,9 @@ categories: [window, linux, wsl]
 tags:       [window, linux, wsl]
 ---
 
+0. this unordered seed list will be replaced by toc as unordered list
+{:toc}
+
 ## Recommended Specifications
 
 - Windows 11, power shell, Ubuntu 22.04.2 LTS
