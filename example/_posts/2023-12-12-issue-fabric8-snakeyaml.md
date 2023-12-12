@@ -5,8 +5,8 @@ description: >
   fix to issue of `io.fabric8.kubernetes.client.utils.Serialization.unmarshal`
 sitemap: false
 hide_last_modified: true
-categories: [kubernetes, kubectl, java]
-tags:       [kubernetes, kubectl, java]
+categories: [issue, kubernetes, fabric8, snakeyaml, kubectl, java]
+tags:       [issue, kubernetes, fabric8, snakeyaml, kubectl, java]
 ---
 
 0. this unordered seed list will be replaced by toc as unordered list
