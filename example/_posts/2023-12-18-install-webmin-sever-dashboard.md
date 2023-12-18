@@ -52,6 +52,15 @@ apt-get install --install-recommends ./webmin-current.deb
 
 {:.related-posts.faded}
 
+### allow ufw
+
+```sh
+sudo ufw allow 10000/tcp
+sudo ufw reload
+```
+
+{:.related-posts.faded}
+
 ### Access
 
 - `https://<Your-Server-IP>:10000`
