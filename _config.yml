@@ -52,7 +52,7 @@ menu:
   # - title:             Issue
   #   url:               /issue/
   - title:             Blogs
-    url:               /blogs/
+    url:               /example/
   - title:             Documentation
     url:               /docs/
   - title:             Reference-Room
@@ -85,7 +85,7 @@ paginate_path:         /:num/
 # ---------------------------------------------------------------------------------------
 
 # theme: jekyll-theme-hydejack
-# remote_theme: hydecorp/hydejack@v9
+remote_theme: hydecorp/hydejack@v9
 
 
 # Customizaton
