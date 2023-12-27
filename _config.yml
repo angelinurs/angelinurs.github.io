@@ -52,7 +52,7 @@ menu:
   # - title:             Issue
   #   url:               /issue/
   - title:             Blogs
-    url:               /example/
+    url:               /blogs/
   - title:             Documentation
     url:               /docs/
   - title:             Reference-Room
