@@ -51,8 +51,8 @@ author:
 menu:
   # - title:             Issue
   #   url:               /issue/
-  - title:             Example
-    url:               /example/
+  - title:             Blogs
+    url:               /blogs/
   - title:             Documentation
     url:               /docs/
   - title:             Reference-Room
