@@ -16,7 +16,7 @@ tags:       [linux, server, log, systemd-logind]
 
 - ubuntu 22.04 live server amd64
 
-### fix
+## fix
 
 - check auth.log
 
