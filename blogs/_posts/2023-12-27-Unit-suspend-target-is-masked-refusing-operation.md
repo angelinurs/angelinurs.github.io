@@ -5,8 +5,8 @@ description: >
   systemd-logind, auth.log
 sitemap: false
 hide_last_modified: true
-categories: [linux, server, log, systemd-logind]
-tags:       [linux, server, log, systemd-logind]
+categories: [linux, server, log, systemd, logind]
+tags:       [linux, server, log, systemd, logind]
 ---
 
 0. this unordered seed list will be replaced by toc as unordered list
