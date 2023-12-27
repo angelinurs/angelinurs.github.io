@@ -1,6 +1,6 @@
 ---
 layout: post
-title: systemd-logind - Unit suspend.target is masked, refusing operation.
+title: systemd-logind, Unit suspend.target is masked, refusing operation.
 description: >
   systemd-logind, auth.log
 sitemap: false
@@ -46,6 +46,7 @@ tmpfs                              1.6G  4.0K  1.6G   1% /run/user/1000
 - modify logind.conf &rarr; `HandleLidSwitch=ignore`
 
 ```sh
+# file : /etc/systemd/logind.conf
 $ vi /etc/systemd/logind.conf
 
 #  This file is part of systemd.
