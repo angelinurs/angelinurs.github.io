@@ -108,14 +108,14 @@ AP[10]  available_WiFi_a 4561737943657274695F65          8A:CC:9C:99:73:4E  Infr
 ```sh
 
 # set static ip
-sudo nmcli con mod EasyCerti_e \
+sudo nmcli con mod available_WiFi_a \
 		ipv4.address 192.168.15.250/24 \
 		ipv4.gateway 192.168.15.1 \
 		ipv4.dns 192.168.15.1 \
 		ipv4.method manual
 
 # apply connection
-sudo nmcli con up EasyCerti_e
+sudo nmcli con up available_WiFi_a
 ```
 
 {:.related-posts.faded}
