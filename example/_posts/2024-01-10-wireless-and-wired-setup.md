@@ -1,8 +1,8 @@
 ---
 layout: post
-title: systemd-logind, Unit suspend.target is masked, refusing operation.
+title: wireless and wired setup
 description: >
-  systemd-logind, auth.log
+  setup wireless and wired dhcp/static ip using NetworkManager, nmcli
 sitemap: false
 hide_last_modified: true
 categories: [linux, server, network, nmcli, NetworkManager, wireless, wired]
