@@ -1,12 +1,12 @@
 ---
 layout: post
-title: caddy, mattermost, postgresql on docker compose
+title: caddy, firezone on docker compose
 description: >
-  Let's construct a mattermost, postgresql, which connects to reverse proxy - caddy with docker compose
+  Let's construct a firezone which connects to reverse proxy - caddy with docker compose
 sitemap: false
 hide_last_modified: true
-categories: [docker compose, mattermost, caddy, reverse proxy, postgresql]
-tags:       [docker compose, mattermost, caddy, reverse proxy, postgresql]
+categories: [docker compose, vpn, firezone, caddy, reverse proxy]
+tags:       [docker compose, vpn, firezone, caddy, reverse proxy]
 ---
 
 0. this unordered seed list will be replaced by toc as unordered list
@@ -16,8 +16,7 @@ tags:       [docker compose, mattermost, caddy, reverse proxy, postgresql]
 
 - ubuntu 22.04 live server amd64
 - caddy:2
-- mattermost/mattermost-preview
-- postgresql:alpine
+- firezone/firezone:${VERSION:-latest}
 
 ## Reference site
 
@@ -103,8 +102,8 @@ services:
   caddy:
     image: caddy:2
     ports:
-      - "80:80"
-      - "443:443"
+      - "9980:80"
+      - "9443:443"
     networks:
       - caddy
     volumes:
