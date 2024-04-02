@@ -8,19 +8,19 @@
     {% assign giscus = site.giscus %}
     {% if giscus.repo %}
     <script src="https://giscus.app/client.js"
-        data-repo="angelinurs/angelinurs.github.io"
-        data-repo-id="R_kgDOK20F_Q"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOK20F_c4CeY8R"
-        data-mapping="pathname"
-        data-strict="1"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="preferred_color_scheme"
-        data-lang="ko"
-        data-loading="lazy"
-        crossorigin="anonymous"
+        data-repo={{ giscus.repo }}
+        data-repo-id={{ giscus.repo-id }}
+        data-category={{ giscus.category }}
+        data-category-id={{ giscus.category-id }}
+        data-mapping={{ giscus.mapping }}
+        data-reactions-enabled={{ giscus.reaction-enabled }}
+        data-theme={{ giscus.theme }}
+        crossorigin={{ giscus.crossorigin }}
+        data-strict={{ giscus.strict }}
+        data-emit-metadata={{ giscus.emit-metadata }}
+        data-input-position={{ giscus.input-position }}
+        data-lang={{ giscus.lang }}
+        data-loading={{ giscus.loading }}
         async>
     </script>
     {% endif %}
