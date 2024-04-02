@@ -17,10 +17,12 @@
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  en
+lang:                  ko-KR, en-US
 
 # The title of your blog. Used in the sidebar and the browser tab.
 title:                 Naru Coding
+
+timezone:              Asia/Seoul
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -32,7 +34,7 @@ description:           >
 tagline:               for Yun Da Hae
 
 # A list of keywords for your blog
-keywords:              [kubernetes,devops,docker compose, git, ci cd]
+keywords:              ["kubernetes", "devops", "docker compose", "git", "ci cd"]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -44,6 +46,10 @@ author:
   # Used by `jekyll-feed`:
   name:                <Naru> <Ramu>
   email:               <angelinurs@hotmail.com>
+  social:
+    github:            angelinurs
+    email:             angelinurs@hotmail.com
+
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
@@ -62,23 +68,23 @@ menu:
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
-# legal:
-#   - title:             LICENSE
-#     url:               /LICENSE/
+legal:
+  - title:             LICENSE
+    url:               /LICENSE/
 #   - title:             NOTICE
 #     url:               /NOTICE/
 #   - title:             CHANGELOG
 #     url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-# copyright:             © 2023. All rights reserved.
+copyright:             © 2023 Naru. All rights reserved.
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              10
-paginate_path:         /:num/
+paginate_path:         /page-:num/
 
 
 # Theme
@@ -91,8 +97,12 @@ remote_theme: hydecorp/hydejack@v9
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
-accent_color:          rgb(79,177,186)
+accent_image:
+  background:          /assets/img/sidebar-bg.jpg
+  overlay:             false
+accent_color:          rgb(0, 173, 181)
+# accent_image:          /assets/img/sidebar-bg.jpg
+# accent_color:          rgb(79,177,186)
 
 # This is used for the `theme-color` meta tag,
 # which changes the background color of the browser UI in certain browsers.
@@ -117,23 +127,23 @@ font_code:             Fira Code, Menlo, Monaco, Consolas, monospace;
 defaults:
   # You can use this to provide a default accent color and background for
   # all pages under a given path:
-  - scope:
-      path:            hyde/
-    values:
-      accent_color:    rgb(38,139,210)
-      theme_color:     rgb(32,32,32)
-      accent_image:
-        background:    rgb(32,32,32)
-        overlay:       false
+  # - scope:
+  #     path:            hyde/
+  #   values:
+  #     accent_color:    rgb(38,139,210)
+  #     theme_color:     rgb(32,32,32)
+  #     accent_image:
+  #       background:    rgb(32,32,32)
+  #       overlay:       false
 
   # Don't include documents in assets in the sitemap
   - scope:
-      path:            assets/
+      path:            assets/**
     values:
       sitemap:         false
 
   - scope:
-      path:            licenses/
+      path:            licenses/**
     values:
       layout:          plain
       sitemap:         false
@@ -198,6 +208,7 @@ giscus:
   lang:                "ko"
   loading:             "lazy"
   
+lightbox:              true
 
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.
@@ -342,6 +353,7 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
+  - node_modules
 include:
   - .well-known
   - LICENSE.md
@@ -363,6 +375,7 @@ plugins:
   - jekyll-titles-from-headings
   - jekyll-include-cache
   - jekyll-last-modified-at
+  - jemoji
 
 
 # SEO Tag
