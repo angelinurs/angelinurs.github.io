@@ -1,7 +1,13 @@
-
--------------------------
-
-<script src="https://giscus.app/client.js"
+{% assign provider = site.comments.provider | default:"disqus" %}
+{% if provider == "disqus" %}
+    {% assign disqus = site.disqus | default:site.disqus_shortname %}
+    {% if disqus %}
+    <!-- original disqus codes -->
+    {% endif %}
+{% elsif provider == "giscus" %}
+    {% assign giscus = site.giscus %}
+    {% if giscus.repo %}
+    <script src="https://giscus.app/client.js"
         data-repo="angelinurs/angelinurs.github.io"
         data-repo-id="R_kgDOK20F_Q"
         data-category="Announcements"
@@ -16,6 +22,6 @@
         data-loading="lazy"
         crossorigin="anonymous"
         async>
-</script>
-
--------------------------
+    </script>
+    {% endif %}
+{% endif %}
